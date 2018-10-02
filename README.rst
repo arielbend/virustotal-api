@@ -41,7 +41,7 @@ Usage
 
     API_KEY = 'Sign-Up for API Key at virustotal.com'
 
-    EICAR = "X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
+    EICAR = "X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*".encode('utf-8')
     EICAR_MD5 = hashlib.md5(EICAR).hexdigest()
 
     vt = VirusTotalPublicApi(API_KEY)
